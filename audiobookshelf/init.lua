@@ -1,5 +1,13 @@
 local M = {}
 
+function M.meta()
+  return {
+    icon = '󰂺',
+    desc = 'Audiobookshelf library browser',
+    color = 'magenta',
+  }
+end
+
 local api = require 'audiobookshelf.api'
 local config = require 'audiobookshelf.config'
 local provider = require 'audiobookshelf.provider'
